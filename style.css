@@ -1,0 +1,94 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; margin: 0; padding: 0; }
+
+.container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.logo {
+    border:3px solid black;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.logo-a {
+    color: rgb(53, 152, 4);
+}
+
+.logo-n {
+    color: rgb(214, 130, 47);
+}
+
+
+
+.progress-bar {
+    height: 30px;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .progress-container {
+    width: 20%;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+    position: relative;
+    animation: hideContainer 5.0s ease-out forwards; /* Nastavte delší dobu animace */
+  }
+
+  @keyframes hideContainer {
+    0% {
+      visibility: visible;
+    }
+    99% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: rgb(91, 206, 34);
+    
+    border-radius: 15px;
+    animation: progress 5s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .button {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #4caf50;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .button:hover,
+  .button:active {
+    cursor: pointer;
+    background-color: #ef7d26;
+    border: 3px dotted black;
+  }
+
+ .link {
+    color: black;
+    text-decoration: none;
+ }
