@@ -2,15 +2,16 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; margin: 0; padding: 0; }
 
 body {
-  width: 85vw;
+  width: 90vw;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-index {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+   
    
 }
 
@@ -160,7 +161,7 @@ footer {
 }
 
 .cart__button {
-  
+  margin-top: 50px;
   width: 75%;
 
 
@@ -169,4 +170,45 @@ footer {
 .cart {
   display: flex;
   justify-content: space-between;
+}
+
+.cart-price {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-price-text {
+  margin-top: 10px;
+  
+}
+
+.final-price {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.pay-subtitle {
+  margin-top: 30px;
+}
+
+.customer-label {
+  margin: 10px 0;
+ 
+  
+  
+}
+
+.return-label {
+  text-align: center;
+  font-weight: 700;
+
+}
+
+.customer-input {
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+ 
 }

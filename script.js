@@ -7,7 +7,6 @@ progressBar.addEventListener('animationend', () => {
 
     progressBar.style.visibility = 'hidden';
     const buttonElement = document.createElement('p');
-     console.log(buttonElement)
     buttonElement.classList.add("button");
     buttonContainer.appendChild(buttonElement);
   
