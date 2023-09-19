@@ -37,6 +37,7 @@ stockCard.forEach((stockCard, index) => {
   });
 
   buttonPay.addEventListener('click', () => {
+    buttonPay.style.visibility = 'hidden';
     const paySubtitle = document.createElement('h2');
     paySubtitle.classList.add('pay-subtitle')
     paySubtitle.textContent = '💸Platba';
@@ -63,6 +64,17 @@ stockCard.forEach((stockCard, index) => {
         cashToReturnOutput.textContent = `💰${cashToReturn} Kč`;
         cashToReturnOutput.classList.add('return-label')
         containerPay.appendChild(cashToReturnOutput);
+
+        const buttonCloseCart = document.createElement('button');
+        buttonCloseCart.classList.add('button', 'cart__button');
+        
+        const linkElement = document.createElement("a");
+        linkElement.classList.add("link");
+        linkElement.href = "index.html";
+        linkElement.textContent = "Ukončit";
+        buttonCloseCart.appendChild(linkElement);
+
+    containerCart.appendChild(buttonCloseCart);
       }
 
 
@@ -73,16 +85,7 @@ stockCard.forEach((stockCard, index) => {
     cashToReturnLabel.classList.add('customer-label')
     containerPay.appendChild(cashToReturnLabel);
 
-    const buttonCloseCart = document.createElement('button');
-    buttonCloseCart.classList.add('button', 'cart__button');
     
-    const linkElement = document.createElement("a");
-    linkElement.classList.add("link");
-    linkElement.href = "index.html";
-    linkElement.textContent = "Ukončit";
-    buttonCloseCart.appendChild(linkElement);
-
-    containerCart.appendChild(buttonCloseCart);
   })
 
 
