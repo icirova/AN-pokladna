@@ -121,6 +121,14 @@ h2 {
   border-radius: 5px;
  }
 
+ .card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+ }
+
+ 
+
 .card__image {
   max-width: 100%;
   display: block;

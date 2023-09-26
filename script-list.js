@@ -74,11 +74,11 @@ stockCard.forEach((stockCard, index) => {
         linkElement.textContent = "Ukončit";
         buttonCloseCart.appendChild(linkElement);
 
-    containerCart.appendChild(buttonCloseCart);
+        containerCart.appendChild(buttonCloseCart);
       }
 
 
-    })
+    });
 
     const cashToReturnLabel = document.createElement('p');
     cashToReturnLabel.textContent ='Vrátit';
@@ -86,7 +86,7 @@ stockCard.forEach((stockCard, index) => {
     containerPay.appendChild(cashToReturnLabel);
 
     
-  })
+  });
 
 
 
