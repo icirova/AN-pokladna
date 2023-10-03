@@ -8,10 +8,11 @@ body {
 }
 
 .container-index {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
    
 }
 
